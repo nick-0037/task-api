@@ -1,0 +1,8 @@
+PUT http://localhost:3001/api/tasks/6673510cfe1ab9e8c6835f0e
+Content-Type: application/json
+
+{
+  "title": "Task 2",
+  "description": "This is task 2",
+  "completed": false
+}

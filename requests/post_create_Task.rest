@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTIyMzIzMWUwYTU4NzBmNjRhMDllMyIsInVzZXJuYW1lIjoiSnVhbnMwNyIsImlhdCI6MTcyMjAzMTExMiwiZXhwIjoxNzIyNjM1OTEyfQ.k9ouv-a7GyhK8cjvmeWT_xicZWe9SKVeSgolh7QfyXU
+
+{
+  "title": "Middleware",
+  "description": "Utilizando el middleware del user extractor",
+  "completed": false
+}
