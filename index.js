@@ -21,9 +21,9 @@ app.use("/api/users", usersRoutes);
 app.use("/api/login", loginRoutes);
 app.use(handleErrors);
 
-const PORT = process.env.PORT;
-const server = app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+// const PORT = process.env.PORT;
+// const server = app.listen(PORT, () => {
+//   console.log(`Server running at http://localhost:${PORT}`);
+// });
 
-module.exports = {app, server};
+module.exports = app;
