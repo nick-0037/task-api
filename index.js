@@ -3,6 +3,7 @@ const Sentry = require("./instrument.js");
 
 require("./mongo");
 const express = require("express");
+const cors = require('cors')
 const taskRoutes = require("./routes/tasks.js");
 const usersRoutes = require("./routes/users.js")
 const loginRoutes = require("./routes/login.js");
@@ -13,6 +14,8 @@ Sentry.init();
 const app = express();
 
 Sentry.setupExpressErrorHandler(app);
+
+app.use(cors())
 
 app.use(express.json());
 
